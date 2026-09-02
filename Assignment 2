@@ -1,1 +1,41 @@
+# Initial course tuple
+courses = ("Python", "Data Science", "Cloud Computing", "Cyber Security", "AI")
 
+# 1. Display the second course
+print("Second course:", courses[1])
+
+# 2. Display the last two courses using slicing
+print("Last two courses:", courses[-2:])
+
+# 3. Check whether "Python" is present
+print("Is Python present?", "Python" in courses)
+
+# 4. Find the index of "Cloud Computing"
+print("Index of Cloud Computing:", courses.index("Cloud Computing"))
+
+# 5. Find the total number of courses
+print("Total number of courses:", len(courses))
+
+# 6. Add two new courses by creating a new tuple
+courses = courses + ("Machine Learning", "Web Development")
+
+# 7. Drop "Cyber Security"
+courses = tuple(course for course in courses if course != "Cyber Security")
+
+# 8. Arrange courses alphabetically
+sorted_courses = tuple(sorted(courses))
+
+# 9. Create a backup copy
+backup_courses = sorted_courses
+
+# 10. Friend's courses
+friend_courses = ("AI", "Blockchain", "Python")
+
+# Combine student's and friend's courses
+combined_courses = sorted_courses + friend_courses
+
+# Display final results
+print("\nFinal course tuple:", courses)
+print("Sorted tuple:", sorted_courses)
+print("Backup tuple:", backup_courses)
+print("Combined tuple:", combined_courses)

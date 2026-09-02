@@ -1,1 +1,48 @@
+# University Tech Fest Participant Management
 
+# Initial list of students
+students = ["Aarav", "Isha", "Rohan", "Sneha", "Kabir"]
+
+# 1. Display the third student's name
+print("Third student:", students[2])
+
+# 2. Change "Rohan" to "Rohan Patil"
+students[2] = "Rohan Patil"
+
+# 3. Add two new students
+students.append("Ananya")
+students.append("Vihaan")
+
+# 4. Remove "Kabir" from the list
+students.remove("Kabir")
+
+# 5. Display the total number of registered students
+print("Total registered students:", len(students))
+
+# 6. Check whether "Isha" is registered
+if "Isha" in students:
+    print("Isha is registered.")
+else:
+    print("Isha is not registered.")
+
+# 7. Arrange the list in alphabetical order
+students.sort()
+
+# 8. Create a backup copy of the final list
+backup_students = students.copy()
+
+# AI Hackathon participants
+hackathon = ["Meera", "Arjun", "Isha"]
+
+# 9. Combine both participant lists
+all_participants = students + hackathon
+
+# 10. Display the final lists
+print("\nFinal Tech Fest Student List:")
+print(students)
+
+print("\nBackup Student List:")
+print(backup_students)
+
+print("\nCombined Participant List:")
+print(all_participants)
